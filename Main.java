@@ -10,6 +10,6 @@ public class Main{
         p1.join();
         p2.join();
 
-        System.out.println("gah dayum");
+        System.out.println(s.getDanaro());
     }
 }

@@ -9,7 +9,7 @@ public class Salvadanaio {
         this.danaro = danaro;
     }
 
-    public void aggiungiDanaro(double danaroAgg){
+    public synchronized void aggiungiDanaro(double danaroAgg){
         this.danaro+=danaroAgg;
     }
 
