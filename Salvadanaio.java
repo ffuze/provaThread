@@ -10,7 +10,7 @@ public class Salvadanaio {
     }
 
     public void aggiungiDanaro(double danaroAgg){
-        danaro+=danaroAgg;
+        this.danaro+=danaroAgg;
     }
 
     public double getDanaro() {
