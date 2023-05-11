@@ -22,6 +22,7 @@ public class Semaforo {
 
     public synchronized void V(){
         stato = 1;
+        notify(); //va a svegliare i thread che aspettando il verde
     }
 
 }
