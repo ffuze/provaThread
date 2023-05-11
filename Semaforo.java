@@ -6,17 +6,21 @@ public class Semaforo {
         this.stato = stato;
     }
 
-    public void P(){
+    public synchronized void P(){
         
         while(stato == 0){
-
+            try{
+                wait();
+            } catch(Exception e){
+                System.out.println(e.getMessage());
+            }
         }
 
         stato = 0;
 
     }
 
-    public void V(){
+    public synchronized void V(){
         stato = 1;
     }
 
