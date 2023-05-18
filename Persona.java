@@ -3,9 +3,10 @@ public class Persona extends Thread{
     private Salvadanaio porcellino;
     private Semaforo semaforo;
 
-    public Persona(String nome, Salvadanaio porcellino){
+    public Persona(String nome, Salvadanaio porcellino, Semaforo semaforo){
         this.nome=nome;
         this.porcellino = porcellino;
+        this.semaforo=semaforo;
     }
 
     @Override
